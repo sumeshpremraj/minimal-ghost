@@ -127,7 +127,7 @@ pre {
 }
 
 .site-title-wrapper {
-    display: table;
+
     margin: 0 auto;
 }
 
@@ -361,7 +361,7 @@ pre {
 }
 
 @media only screen and (max-width: 400px) {
-    .post-title { font-size: 32px; }
+    .post-title { font-size: 22px; }
 }
 
 
@@ -369,11 +369,19 @@ pre {
 
 
 /* Custom */
-.site-title {font-size: 22px;   }
+.site-title a {font-size: 22px; background: #4D86A3; }
+.button-square{ background: #666; float: right;} 
+.js-show-index{ background: #777; }
 .button-square{ height: 25px;line-height: 30px;color: #f0f0f0; text-transform: lowercase; font-size: 14px; }
-.site-header { margin: 25px 0 35px;}
+.site-header { margin: 0 0 35px; background: #555; padding-left: 75px; }
+.site-header a{margin:0;}
 .post-date:after { border:0; margin-bottom: 20px}
 .post-header {    padding: 0;}
 .post-title {    font-size: 30px; text-transform: none; text-align: left}
 .post-date{float: right;}
 .footer { padding: 20px 0; }
+.post-content{line-height: 18px}
+.post-content p{margin: 6px 0}
+h1, h2, h3, h4, h5, h6 {
+    margin: 40px 0 15px; 
+}
