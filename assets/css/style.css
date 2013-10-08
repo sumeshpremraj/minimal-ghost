@@ -371,3 +371,7 @@ pre {
 /* Custom */
 .site-title {font-size: 24px; height: 25px;}
 .button-square{ height: 25px;line-height: 30px;color: #f0f0f0; text-transform: lowercase; font-size: 14px; }
+.site-header { margin: 25px 0 35px;}
+.post-date:after { border:0; margin-bottom: 20px}
+.post-header {    padding: 0;}
+.post-title {    font-size: 30px; text-transform: none;}
