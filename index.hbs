@@ -3,9 +3,9 @@
 <div id="latest-post" class="container">
     <article class="{{post_class}}">
         <header class="post-header">
-            <h1 class="post-title">{{posts.0.title}}</h1>
+            <h1 class="post-title">{{posts.0.title}} <span class="post-date"><time datetime="{{posts.0.published_at}}">{{date posts.0.published_at format="MMMM Do YYYY"}}</time></span></h1>
 
-            <p class="post-date"><time datetime="{{posts.0.published_at}}">Published {{date posts.0.published_at format="MMMM Do YYYY"}}</time></p>
+            
         </header>
 
         <div class="post-content">
