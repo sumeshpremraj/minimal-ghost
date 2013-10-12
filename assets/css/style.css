@@ -368,8 +368,8 @@ pre {
 
 /* Custom */
 .site-header { margin: 0 0 35px; background: #555; padding-right: 75px; }
-.site-title a {font-size: 22px; background: #4D86A3; position: relative; left: 70px; padding: 6px; margin:0;}
-.button-square{ background: #666; float: right; padding: 12px 6px 6px; margin: 0;} 
+.site-title a { font-size: 23px; background: #4D86A3; position: relative; left: 70px; padding: 8px 6px 4px; margin:0;}
+.button-square{ background: #666; float: right; padding: 10px 6px 8px; margin: 0;} 
 .js-show-index{ background: #777; }
 .button-square{ height: auto; line-height: 23px; color: #f0f0f0; text-transform: lowercase; font-size: 14px; }
 .post-header {    padding: 0;}
