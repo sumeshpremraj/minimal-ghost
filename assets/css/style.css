@@ -190,6 +190,8 @@ pre {
 
 .post-content { margin: 0 0 92px; }
 
+.post-content h3 { font-size: 25px; font-weight: 700; margin: 40px 0 25px;}
+
 .post-content a:hover {
     border-bottom: 1px dotted #F03838;
     padding: 0 0 2px;
@@ -348,33 +350,42 @@ pre {
 }
 
 /* ============================================================ */
-/* Media Queries */
-/* ============================================================ */
-
-@media only screen and (max-width: 600px) {
-    .post-stub-title { display: block; }
-
-    .post-stub-date:before {
-        content: "";
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .post-title { font-size: 22px; }
-}
-
-
 
 /* Custom */
 .site-header { margin: 0 0 35px; background: #555; padding-right: 75px; }
-.site-title a { font-size: 23px; background: #4D86A3; position: relative; left: 70px; padding: 8px 6px 4px; margin:0;}
-.button-square{ background: #666; float: right; padding: 10px 6px 8px; margin: 0;} 
-.js-show-index{ background: #777; }
-.button-square{ height: auto; line-height: 23px; color: #f0f0f0; text-transform: lowercase; font-size: 14px; }
+.site-title a { font-size: 23px; background: #4D86A3; position: relative; left: 70px; padding: 6px; margin:0; text-transform: none;}
+.site-title a:hover{background: #555;}
+.site-title span {
+    color: #ddd;
+}
+
+a.twitLink{
+    color: #ccc;
+    font: 700 16px "Roboto Slab", Helvetica, sans-serif;
+    text-transform: lowercase;
+    background: url('../images/twitter-grey.png') left 4px no-repeat;
+    padding: 0 0 0 22px;
+    margin: 10px 0 0 20px; 
+    display: block;
+}
+a.twitLink:before{ content: ""; }
+a.twitLink:hover{
+    color: #fff;
+    background: transparent url('../images/twitter.png') left 4px no-repeat;
+}
+
+.button-square{ background: #777; float: right; padding: 12px 8px 8px; margin: 0; height: auto; line-height: 23px; color: #f0f0f0; text-transform: lowercase; font-size: 14px; border-left: 1px solid #555; } 
+.rssbutton{ background: #666; }
+.icon-rss {
+    background-position: 0 -24px;
+    margin-top: 4px;
+    height: 19px;
+    width: 14px;
+}
+
 .post-header {    padding: 0;}
 .post-date:after { border:0; margin-bottom: 20px}
-.post-title {    font-size: 30px; text-transform: none; text-align: left; font-weight: 700; color: #333;}
+.post-title { clear: both; font-size: 30px; text-transform: none; text-align: left; font-weight: 700; color: #333;}
 .post-date{float: right;}
 .post-content{line-height: 18px; font-family: "Roboto Slab", Georgia, serif; } 
 .post-content a{color: #468ACF}
@@ -391,4 +402,53 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-.footer-copyright a:hover { color: #777; }
+.post-content figure{
+    margin: 0 0 25px;
+}
+
+.post-content figure.wide{
+    margin: 0 -1000px 25px;
+}
+
+.post-content figure img{margin: 0;}
+
+.post-content figure.wide img{  
+      width:100%;
+  max-width:1000px;
+    height: auto!important;
+    margin: 0 auto;
+  -ms-interpolation-mode:bicubic;
+
+
+}
+
+.post-content figure figcaption { color: #888; font-size: 18px; text-align: center; }
+.post-content figure.wide figcaption { margin-top: 10px;}
+
+
+/* Media Queries */
+/* ============================================================ */
+
+@media only screen and (max-width: 600px) {
+    .post-stub-title { display: block; }
+
+    .post-stub-date:before {
+        content: "";
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .post-title { font-size: 22px; }
+    .post-content figure.wide{  margin: 0 -40px;}
+    a.button-square { display: block; }
+    a.rssbutton { clear: both; }
+    .post { margin-left: 10px; min-width: 340px  }
+ }
+
+@media only screen and (max-width: 1024px) {
+    .site-header { padding-right: 0; }
+    .site-title a { position: relative; left: 0px; padding: 6px;}
+    .post-content figure.wide{  margin: 0 -40px;}
+    a.twitLink{ padding: 0 0 0 22px; margin: 10px 0 0 20px; }   
+}
